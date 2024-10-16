@@ -1,0 +1,8 @@
+---
+- hosts: Bastions_Servers
+  become: false
+  tasks:
+    - name: Desplegando Asistencia Frontend
+      shell: |
+        echo "Desplegando Asistencia Frontend"
+        /opt/administrativo/qa/scripts/deployasistenciafrontend.sh
