@@ -1,0 +1,8 @@
+---
+- hosts: Bastions_Servers
+  become: false
+  tasks:
+    - name: Desplegando Asistencia Registro
+      shell: |
+        echo "Desplegando Asistencia Registro Service"
+        /opt/administrativo/qa/scripts/deployasistenciaregistro.sh
