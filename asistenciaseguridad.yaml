@@ -1,0 +1,8 @@
+---
+- hosts: Bastions_Servers
+  become: false
+  tasks:
+    - name: Desplegando Administrativo Seguridad
+      shell: |
+        echo "Desplegando Administrativo Seguridad Service"
+        /opt/administrativo/qa/scripts/deployadministrativoseguridad.sh
